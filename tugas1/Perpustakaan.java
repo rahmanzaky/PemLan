@@ -1,39 +1,50 @@
 package tugas1;
+import java.util.Scanner;
 
 public class Perpustakaan {
-    private String options[] = new String[9];
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+        PusatDataPerpustakaan options = new PusatDataPerpustakaan();
+        options.setOptions();
 
-    private String bukuTeknologi[][] = new String[6][5];
-    private String bukuFilsafat[][] = new String[6][5];
-    private String bukuSejarah[][] = new String[6][5];
-    private String bukuAgama[][] = new String[6][5];
-    private String bukuPsikologi[][] = new String[6][5];
-    private String bukuPolitik[][] = new String[6][5];
-    private String bukuFiksi[][] = new String[6][5];
+        System.out.println("\n======================[Perpustakaan]=======================\n"
+                    + "Masukkan pilihan untuk melihat buku berdasarkan kategori");
+        for (int i = 0; i < options.getOptionsLength(); i++) {
+            System.out.printf("%d. %s%n", i + 1, options.getOptions(i));
+        }
+        System.out.println("============================================================");
+        System.out.print("Pilihan Anda: ");
+        int userChoice = scn.nextInt();
 
-public void setOptions(){
-    this.options[0] = "Teknologi";
-    this.options[1] = "Filsafat";
-    this.options[2] = "Sejarah";
-    this.options[3] = "Agama";
-    this.options[4] = "Psikologi";
-    this.options[5] = "Politik";
-    this.options[6] = "Fiksi";
-    this.options[7] = "Tampilkan total buku yang tersedia";
-    this.options[8] = "Keluar dari program";
-}
+        if (userChoice == 1) { // Teknologi
+            
+        } else if (userChoice == 2){ // Filsafat
+
+            
+        } else if (userChoice == 3){ // Sejarah
+
+            
+        } else if (userChoice == 4){ // Agama
+
+            
+        } else if (userChoice == 5){ // Psikologi
+
+            
+        } else if (userChoice == 6){ // Politik
+
+            
+        } else if (userChoice == 7){ // Fiksi
+
+            
+        } else if (userChoice == 8){ // Total Buku
+            System.out.println("");
+
+            
+        } else if (userChoice == 9){ // Keluar dari Program
+
+        }
 
 
-public String getBukuSejarah(int x, int y){
-    return bukuSejarah[x][y];
-}
-
-
-public int getOptionsLength(){
-    return options.length;
-}
-public String getOptions(int options){
-    return this.options[options];
-}
-
+        scn.close();
+    }
 }
