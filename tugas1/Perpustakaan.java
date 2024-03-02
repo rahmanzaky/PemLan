@@ -16,33 +16,10 @@ public class Perpustakaan {
         System.out.print("Pilihan Anda: ");
         int userChoice = scn.nextInt();
 
-        if (userChoice == 1) { // Teknologi
+        if (userChoice == 1) {
             
-        } else if (userChoice == 2){ // Filsafat
-
-            
-        } else if (userChoice == 3){ // Sejarah
-
-            
-        } else if (userChoice == 4){ // Agama
-
-            
-        } else if (userChoice == 5){ // Psikologi
-
-            
-        } else if (userChoice == 6){ // Politik
-
-            
-        } else if (userChoice == 7){ // Fiksi
-
-            
-        } else if (userChoice == 8){ // Total Buku
-            System.out.println("");
-
-            
-        } else if (userChoice == 9){ // Keluar dari Program
-
         }
+
 
 
         scn.close();
