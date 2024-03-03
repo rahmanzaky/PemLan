@@ -93,7 +93,7 @@ public class Perpustakaan {
                 } while (userContinue);
             } else if (userChoice == 8) {
                 System.out.println("\n============================================================");
-                System.out.println("COUNT: Total buku adalah = 42");
+                System.out.println("COUNT: Total buku adalah = 35");
                 System.out.println("============================================================");
 
                 
@@ -132,5 +132,6 @@ public class Perpustakaan {
         System.out.println("Terima kasih telah menggunakan program ini.");
         System.out.println("Sampai jumpa di lain kesempatan!");
         System.out.println("============================================================");
+        scn.close();
     }
 }
