@@ -2,7 +2,6 @@ package tugas1;
 
 public class PusatDataPerpustakaan {
     private String options[] = new String[9];
-
     private String bukuTeknologi[][] = new String[8][5];
     private String bukuFilsafat[][] = new String[5][5];
     private String bukuSejarah[][] = new String[6][5];
@@ -24,8 +23,26 @@ public void setOptions(){
 }
 
 
+public String getBukuTeknologi(int x, int y){
+    return bukuSejarah[x][y];
+}
+public String getBukuFilsafat(int x, int y){
+    return bukuFilsafat[x][y];
+}
 public String getBukuSejarah(int x, int y){
     return bukuSejarah[x][y];
+}
+public String getBukuAgama(int x, int y){
+    return bukuAgama[x][y];
+}
+public String getBukuPsikologi(int x, int y){
+    return bukuPsikologi[x][y];
+}
+public String getBukuPolitik(int x, int y){
+    return bukuPolitik[x][y];
+}
+public String getBukuFiksi(int x, int y){
+    return bukuFiksi[x][y];
 }
 
 
