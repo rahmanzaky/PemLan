@@ -4,14 +4,14 @@ import java.util.Scanner;
 public class Perpustakaan {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
-        PusatDataPerpustakaan options = new PusatDataPerpustakaan();
-        options.setOptions();
+        PusatDataPerpustakaan dataBuku = new PusatDataPerpustakaan();
+        dataBuku.setOptions();
 
         while (true) {
             System.out.println("\n======================[Perpustakaan]=======================\n"
             + "Masukkan pilihan untuk melihat buku berdasarkan kategori.");
-            for (int i = 0; i < options.getOptionsLength(); i++) {
-                System.out.printf("%d. %s%n", i + 1, options.getOptions(i));
+            for (int i = 0; i < dataBuku.getOptionsLength(); i++) {
+                System.out.printf("%d. %s%n", i + 1, dataBuku.getOptions(i));
             }
             System.out.println("============================================================");
             System.out.print("Pilihan Anda: ");
@@ -31,6 +31,13 @@ public class Perpustakaan {
             
 
             if (userChoice == 1) { // Teknologi
+                System.out.println("Buku ke");
+                for (int i = 0; i < 4; i++) {
+                    for (int j = 0; j < 4; j++) {
+                        
+                    }
+                }
+
                 
             } else if (userChoice == 2){ // Filsafat
 
