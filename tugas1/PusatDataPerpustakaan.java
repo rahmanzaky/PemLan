@@ -64,31 +64,7 @@ public class PusatDataPerpustakaan {
         options[7] = "Tampilkan total buku yang tersedia";
         options[8] = "Keluar dari program";
     }
-
-
-    public String getBukuTeknologi(int x, int y){
-        return bukuSejarah[x][y];
-    }
-    public String getBukuFilsafat(int x, int y){
-        return bukuFilsafat[x][y];
-    }
-    public String getBukuSejarah(int x, int y){
-        return bukuSejarah[x][y];
-    }
-    public String getBukuAgama(int x, int y){
-        return bukuAgama[x][y];
-    }
-    public String getBukuPsikologi(int x, int y){
-        return bukuPsikologi[x][y];
-    }
-    public String getBukuPolitik(int x, int y){
-        return bukuPolitik[x][y];
-    }
-    public String getBukuFiksi(int x, int y){
-        return bukuFiksi[x][y];
-    }
-
-
+    
     public int getOptionsLength(){
         return options.length;
     }
