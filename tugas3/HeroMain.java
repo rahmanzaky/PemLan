@@ -29,39 +29,47 @@ public class HeroMain {
                 System.out.print("Nama Hero           : ");
                 hero1.setName(scn.nextLine());
             } catch (Exception e) {
+                System.out.println("\n==============================");
                 System.out.println("\nERROR: Input tidak valid");
+                System.out.println("==============================");
                 continue;
             }
             
             try {
                 System.out.print("Health Point        : ");
                 int health1 = scn.nextInt();
+                scn.nextLine();
                 if (health1 >= 0 && health1 <= 500) {
                     hero1.setHealth(health1);
                 } else {
+                    System.out.println("\n==============================");
                     System.out.println("ERROR: Input tidak valid");
-                    scn.nextLine();
+                    System.out.println("==============================");
                     continue;
                 }
             } catch (Exception e) {
+                System.out.println("\n==============================");
                 System.out.println("ERROR: Input tidak valid");
-                scn.nextLine();
+                System.out.println("==============================");
                 continue;
             }
             
             try {
                 System.out.print("Attack Power        : ");
                 int power1 = scn.nextInt();
+                scn.nextLine();
                 if (power1 >= 0 && power1 <= 500) {
                     hero1.setAttackPower(power1);
                 } else {
+                    System.out.println("\n==============================");
                     System.out.println("ERROR: Input tidak valid");
-                    scn.nextLine();
+                    System.out.println("==============================");
                     continue;
                 }
             } catch (Exception e) {
+                System.out.println("\n==============================");
                 System.out.println("ERROR: Input tidak valid");
-                scn.nextLine();
+                System.out.println("==============================");
                 continue;
             }
 
@@ -72,14 +80,16 @@ public class HeroMain {
                 if (defense1 >= 0 && defense1 <= 500) {
                     hero1.setDefensePower(defense1);
                 } else {
+                    System.out.println("\n==============================");
                     System.out.println("ERROR: Input tidak valid");
-                    scn.nextLine();
+                    System.out.println("==============================");
                     continue;
                 }
 
             } catch (Exception e) {
+                System.out.println("\n==============================");
                 System.out.println("ERROR: Input tidak valid");
-                scn.nextLine();
+                System.out.println("==============================");
                 continue;
             }
             System.out.println("==============================================================");
@@ -125,40 +135,38 @@ public class HeroMain {
                     System.out.println("\n==============================");
                     System.out.println("ERROR: Input tidak valid");
                     System.out.println("==============================");
-                    scn.nextLine();
                     continue;
                 }
             } catch (Exception e) {
                 System.out.println("\n==============================");
                 System.out.println("ERROR: Input tidak valid");
                 System.out.println("==============================");
-                scn.nextLine();
                 continue;
             }
             
             try {
                 System.out.print("Attack Power        : ");
                 inputPower2 = scn.nextInt();
+                scn.nextLine();
                 if (inputPower2 >= 0 && inputPower2 <= 500) {
                     power2 = inputPower2;
                 } else {
                     System.out.println("\n==============================");
                     System.out.println("ERROR: Input tidak valid");
                     System.out.println("==============================");
-                    scn.nextLine();
                     continue;
                 }
             } catch (Exception e) {
                 System.out.println("\n==============================");
                 System.out.println("ERROR: Input tidak valid");
                 System.out.println("==============================");
-                scn.nextLine();
                 continue;
             }
 
             try {
                 System.out.print("Defense Point       : ");
                 inputDefense2 = scn.nextInt();
+                scn.nextLine();
                 if (inputDefense2 >= 0 && inputDefense2 <= 500) {
                     defense2 = inputDefense2;
                 } else {
@@ -172,7 +180,6 @@ public class HeroMain {
                 System.out.println("==============================");
                 System.out.println("ERROR: Input tidak valid");
                 System.out.println("==============================");
-                scn.nextLine();
                 continue;
             }
             System.out.println("==============================================================");
@@ -181,7 +188,7 @@ public class HeroMain {
         } while (playerLoop);
 
         Hero hero2 = new Hero(name2, health2, power2, defense2);
-        
+
         System.out.println("\n==============================================================");
         System.out.println("Pertarungan dimulai!");
         System.out.println("==============================================================");
