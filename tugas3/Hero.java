@@ -1,6 +1,6 @@
 /*
- * Nama file: HeroMain.java
- * Fungsi: Main class untuk permainan adu hero
+ * Nama file: Hero.java
+ * Fungsi: class Hero untuk attributes dari HeroMain
  * Pemrogram: Rahman Zaky
  * NIM: 235150401111030
  * 
