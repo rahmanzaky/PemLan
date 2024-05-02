@@ -23,8 +23,8 @@ public class Tugas4Main {
 
         Pekerja pekerja = new Pekerja("Erza", true, "3053170423111007", true, 3600.0, LocalDate.of(2022, 4, 12), 2);
         System.out.println(pekerja.toString());
-        Pekerja pekerja2Pekerja = new Pekerja("Reza", true, "3053170713111007", false, 4000.0, LocalDate.of(2015, 4, 15), 0);
-        System.out.println(pekerja2Pekerja.toString());
+        Pekerja pekerja2 = new Pekerja("Reza", true, "3053170713111007", false, 4000.0, LocalDate.of(2015, 4, 15), 0);
+        System.out.println(pekerja2.toString());
         Pekerja pekerja3 = new Pekerja("Rashky", true, "3053170823111007", true, 12500.0, LocalDate.of(2004, 1, 23), 10);
         System.out.println(pekerja3.toString());
 
